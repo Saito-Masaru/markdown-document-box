@@ -8,7 +8,7 @@ docsディレクトリの中に拡張子（.md）を置いた状態でブラウ�
 
 ## 利用方法
 
-起動  
+### 起動  
 
 ```
 docker-compose up -d
@@ -30,7 +30,7 @@ Retype new SMB password:
 Added user root.
 ```
 
-ブラウザでアクセスする。  
+### ブラウザでアクセスする。  
 `http://localhost:8080/`  
 
 ※sambaについてはdocker-engineをインストールした環境で実行した場合は `\\サーバーのIPアドレス\docs\` でアクセスできるはずです。  
