@@ -18,6 +18,7 @@ docker-compose up -d
 
 * phpのライブラリをインストールする
 
+```
 docker exec -it documents_web composer install
 ```
 
