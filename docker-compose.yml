@@ -1,0 +1,24 @@
+version: "3"
+services:
+  documnets:
+    container_name: documents_web
+    build: ./docker/apache2/
+    ports:
+      - "8080:80"
+    working_dir: /var/www/php
+    volumes:
+      - ./docker/apache2/www/:/var/www
+      - ./docs/:/var/www/docs
+      - ./docker/apache2/000-default.conf:/etc/apache2/sites-available/000-default.conf
+    tty: true
+
+  samba:
+    image: vimagick/samba
+    container_name: documents_samba
+    volumes:
+      - ./docker/samba/smb.conf:/etc/samba/smb.conf
+      - ./docs:/docs
+    tty: true
+    network_mode: "host"
+    restart: always
+
