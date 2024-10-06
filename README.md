@@ -30,7 +30,8 @@ Retype new SMB password:
 Added user root.
 ```
 
-### ブラウザでアクセスする。  
+### ブラウザでアクセスする
+
 `http://localhost:8080/`  
 
 ※sambaについてはdocker-engineをインストールした環境で実行した場合は `\\サーバーのIPアドレス\docs\` でアクセスできるはずです。  
