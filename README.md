@@ -53,6 +53,7 @@ apache2の設定（httpd.conf）
 次にこの `text/markdown` のファイルを `/php/markdown.php` に処理して出力（フィルター処理）することを定義します。  
 なお、この `/php/markdown.php` の `/php/` は以下の設定で ドキュメントディレクトリ（docs）ではなく `docker/apache2/www/php/markdown.php` でアクセスしています。  
 
+```
 Alias /php/ /var/www/php/
 <Directory "/var/www/php">
     Require all granted
